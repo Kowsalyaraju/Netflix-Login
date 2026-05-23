@@ -31,11 +31,12 @@ function Login()
             return
         }
 
-        axios.post("https://netflix-login-qx9c.onrender.com/",
-        {
-            email: entemail,
-            password: entpass
-        })
+       axios.post("https://netflix-login-qx9c.onrender.com/login",
+    {
+        email: entemail,
+        password: entpass
+    }
+)
 
         .then(function(data)
         {
